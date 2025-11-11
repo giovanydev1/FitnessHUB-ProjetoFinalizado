@@ -1,4 +1,4 @@
-// ----------- MENU E LOGIN -----------
+// menu e login
 const menu = document.querySelectorAll('nav a li');
 const btnLogin = document.getElementById('btnLogin');
 const btnFechar = document.getElementById('btnFechar');
@@ -35,7 +35,7 @@ document.querySelectorAll('nav ul a').forEach(link => {
 btnLogin.onclick = function () { login.showModal(); }
 btnFechar.onclick = function () { login.close(); }
 
-// ----------- LOGIN ADMIN -----------
+// login administrador
 function logar() {
   let usuario = document.getElementById('usuario').value;
   let senha = document.getElementById('senha').value;
@@ -56,7 +56,7 @@ function logar() {
   }
 }
 
-// ----------- FORM: AULA EXPERIMENTAL -----------
+// formulario de aula experimental
 function enviarAgendamento(event) {
   event.preventDefault();
 
@@ -78,7 +78,7 @@ function enviarAgendamento(event) {
   document.querySelector("#aula-exp form").reset();
 }
 
-// ----------- FORM: AVALIAÇÃO INICIAL -----------
+// formulario de avaliação inicial
 function enviarAvaliacao(event) {
   event.preventDefault();
 

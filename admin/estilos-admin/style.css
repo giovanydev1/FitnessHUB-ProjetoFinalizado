@@ -1,4 +1,4 @@
-/* Padrão geral*/
+/*padrao geral*/
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
@@ -17,15 +17,15 @@ body {
 .flex { display: flex; }
 
 a { text-decoration: none; }
-/* Fim Geral */
-/* Início Header */
+/* fim do padrao geral */
+/* inicio header */
 header{ text-align: right; }
 
 header a { color: rgb(27, 102, 168); }
     
 header a:hover{ color: rgb(7, 60, 105); }
-/* Fim Header */
-/* Início Menu */
+/* fim do header */
+/* inicio do menu lateral*/
 .menuLateral {
     width: 230px;
     height: 100vh;
@@ -74,8 +74,8 @@ span.none{
 }
 
 .btnToggle span{ font-size: 16px;}
-/* Fim Menu*/
-/* Inicio Conteúdo */
+/* fim do menu lateral*/
+/* inicio do conteudo */
 main {
     margin-left: 250px;
     flex: 1;
@@ -84,8 +84,8 @@ main {
 }
 
 main.expandir { margin-left: 60px; }
-/* Fim Conteúdo */
-/* Início Usuário*/ 
+/* fim do conteudo */
+/* inicio do formulario de cadastro*/ 
 form {
     width: 60%;
     min-width: 450px;
@@ -132,8 +132,8 @@ form button {
 }
 
 form button:hover { background-color: #247126; }
-/* Fim Usuário*/
-/* Início Tabela */
+/* fim do formulario de cadastro*/
+/* inicio da tabela exibição de dados*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -171,4 +171,4 @@ table td a:last-child{
 table td a:last-child:hover{ color: rgb(133, 11, 11); }
  
 #orcamentos table tr th:last-child{ min-width: 200px;}
-/* Fim Tabela*/ 
+/* fim da tabela*/ 
