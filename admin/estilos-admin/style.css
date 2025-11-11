@@ -5,25 +5,37 @@
 
 :root {
 
-  --fonte-padrao: "Abel", sans-serif;
-  --fonte-titulos: 'Bebas Neue';
+    --fonte-padrao: "Abel", sans-serif;
+    --fonte-titulos: 'Bebas Neue';
 }
 
 body {
-    margin: 0px; 
+    margin: 0px;
     font-family: Arial, sans-serif;
 }
 
-.flex { display: flex; }
+.flex {
+    display: flex;
+}
 
-a { text-decoration: none; }
+a {
+    text-decoration: none;
+}
+
 /* fim do padrao geral */
 /* inicio header */
-header{ text-align: right; }
+header {
+    text-align: right;
+}
 
-header a { color: rgb(27, 102, 168); }
-    
-header a:hover{ color: rgb(7, 60, 105); }
+header a {
+    color: rgb(27, 102, 168);
+}
+
+header a:hover {
+    color: rgb(7, 60, 105);
+}
+
 /* fim do header */
 /* inicio do menu lateral*/
 .menuLateral {
@@ -50,7 +62,7 @@ header a:hover{ color: rgb(7, 60, 105); }
     text-decoration: none;
 }
 
-.menuLateral a li:hover{
+.menuLateral a li:hover {
     background-image: linear-gradient(to top, #000, rgb(43, 1, 43), rgb(49, 2, 49));
 }
 
@@ -59,9 +71,11 @@ header a:hover{ color: rgb(7, 60, 105); }
     text-align: center;
 }
 
-.menuLateral span{ margin-left: 10px;}
+.menuLateral span {
+    margin-left: 10px;
+}
 
-span.none{
+span.none {
     display: none;
     transition: display 0.5s ease;
 }
@@ -73,7 +87,10 @@ span.none{
     color: #fff;
 }
 
-.btnToggle span{ font-size: 16px;}
+.btnToggle span {
+    font-size: 16px;
+}
+
 /* fim do menu lateral*/
 /* inicio do conteudo */
 main {
@@ -83,9 +100,12 @@ main {
     transition: margin-left 0.3s ease-in-out;
 }
 
-main.expandir { margin-left: 60px; }
+main.expandir {
+    margin-left: 60px;
+}
+
 /* fim do conteudo */
-/* inicio do formulario de cadastro*/ 
+/* inicio do formulario de cadastro*/
 form {
     width: 60%;
     min-width: 450px;
@@ -99,7 +119,7 @@ form label {
     margin: 10px;
 }
 
-form label.erro{
+form label.erro {
     width: calc(100% - 20px);
     padding: 10px;
     background-color: rgb(255, 190, 190);
@@ -107,7 +127,7 @@ form label.erro{
     text-align: center;
 }
 
-form label.sucesso{
+form label.sucesso {
     width: calc(100% - 20px);
     padding: 10px;
     background-color: rgb(190, 255, 212);
@@ -131,7 +151,10 @@ form button {
     border-radius: 5px;
 }
 
-form button:hover { background-color: #247126; }
+form button:hover {
+    background-color: #247126;
+}
+
 /* fim do formulario de cadastro*/
 /* inicio da tabela exibição de dados*/
 table {
@@ -140,7 +163,8 @@ table {
     margin-top: 20px;
 }
 
-table th, table td {
+table th,
+table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -151,24 +175,99 @@ table th {
     color: white;
 }
 
-table tr td:last-child{
+table tr td:last-child {
     width: 90px;
     text-align: center;
 }
 
-table th:last-child{text-align: center; }
+table th:last-child {
+    text-align: center;
+}
 
-table tr:nth-child(even) {background-color: #eee; }
+table tr:nth-child(even) {
+    background-color: #eee;
+}
 
-table td a{ color: rgb(27, 102, 168); }
+table td a {
+    color: rgb(27, 102, 168);
+}
 
-table td a:hover{ color: rgb(7, 60, 105); }
+table td a:hover {
+    color: rgb(7, 60, 105);
+}
 
-table td a:last-child{
+table td a:last-child {
     color: rgb(186, 36, 36);
     margin-left: 10px;
 }
-table td a:last-child:hover{ color: rgb(133, 11, 11); }
- 
-#orcamentos table tr th:last-child{ min-width: 200px;}
-/* fim da tabela*/ 
+
+table td a:last-child:hover {
+    color: rgb(133, 11, 11);
+}
+
+#orcamentos table tr th:last-child {
+    min-width: 200px;
+}
+
+/* fim da tabela*/
+
+/*responsividade media queries*/
+
+@media (max-width: 1024px) {
+    main {
+        margin-left: 200px;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        min-width: unset;
+        text-align: left;
+    }
+
+    form label {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuLateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        min-width: unset;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table th,
+    table td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

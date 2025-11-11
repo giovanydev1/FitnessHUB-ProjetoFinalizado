@@ -24,7 +24,7 @@ document.querySelectorAll('nav ul a').forEach(link => {
     const alvo = document.querySelector(href);
     if (alvo) {
       window.scroll({
-        top: alvo.offsetTop - 40,
+        top: alvo.offsetTop - 70,
         behavior: 'smooth'
       });
     }
