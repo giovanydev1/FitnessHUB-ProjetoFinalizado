@@ -242,6 +242,8 @@ table td a:last-child:hover {
         position: relative;
         width: 100%;
         height: auto;
+        border-radius: 7px;
+        margin: 10px;
     }
 
     main {
