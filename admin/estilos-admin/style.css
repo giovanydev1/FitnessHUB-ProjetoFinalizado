@@ -244,6 +244,7 @@ table td a:last-child:hover {
         height: auto;
         border-radius: 7px;
         margin: 10px;
+        font-size: 0.7em;
     }
 
     main {
@@ -278,13 +279,4 @@ table td a:last-child:hover {
         text-align: left;
         margin-bottom: 10px;
     }
-
-    .menuLateral ul {
-        display: none;
-    }
-
-    .menuLateral.ativo ul {
-        display: block;
-    }
-
 }
