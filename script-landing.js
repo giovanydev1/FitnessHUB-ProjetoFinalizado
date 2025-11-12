@@ -4,6 +4,12 @@ const btnLogin = document.getElementById('btnLogin');
 const btnFechar = document.getElementById('btnFechar');
 const login = document.getElementById('login');
 
+document.querySelector('#login form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  logar();
+});
+
+
 var dadosUsuarios = JSON.parse(localStorage.getItem('dadosUsuarios')) || [];
 
 // cria usuários iniciais
